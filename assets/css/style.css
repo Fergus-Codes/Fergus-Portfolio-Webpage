@@ -1,6 +1,13 @@
+:root {
+    --Heading-text-background: rgb(72, 132, 241);
+    
+  }
+
+
 * {
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 header {
@@ -8,20 +15,23 @@ header {
     display: flex;
     flex-direction: row;
     font-size: 24px;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-
+    justify-content: space-between;
+    
 
 }
 
-nav{
+header nav{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;  
   padding: 2%;
   line-height: 1.5;
   margin: 5px;
+  color: black;
+  position: relative;
+  
     
 
 }
@@ -35,7 +45,9 @@ a {
 
 header img {
 height: 125px;
-border-radius: 25%;
+border-radius: 10px;
+margin-left: 10px;
+
 
 
 }
@@ -48,6 +60,11 @@ header h1 {
     margin: 10px;
     position: relative;
     font-size: 55px;
+    background-color: var(--Heading-text-background);
+    border-radius: 10px;
+   
+    
+
     
     
 }
@@ -87,15 +104,20 @@ body h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: normal;
+    
     flex-direction: row;
 
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1026px) {
     header {
       flex-direction: column;
+    }
+
+    header img {
+    margin-top: 10px;    
+
     }
 }
    

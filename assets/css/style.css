@@ -29,7 +29,6 @@ header nav{
   padding: 2%;
   line-height: 1.5;
   margin: 5px;
-  color: black;
   position: relative;
   
     
@@ -62,11 +61,6 @@ header h1 {
     font-size: 55px;
     background-color: var(--Heading-text-background);
     border-radius: 10px;
-   
-    
-
-    
-    
 }
 
 .hero img{
@@ -90,6 +84,7 @@ line-height: 1.5;
 
 body p {
     font-size: 30px;
+    line-height: 1.2;
 
 }
 
@@ -99,15 +94,85 @@ body h2 {
 }
 
 
-#contact a {
+#contact a{
     font-size: 30px ;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
     
-    flex-direction: row;
+}
+
+#contact h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#contact a:hover{
+    background-color: aquamarine;
+    border-radius: 5px;
+    box-shadow: 5px gray;
+    margin: 5px;
+    padding: 5px;
+   
+    }
+
+.navlinks a:hover{
+background-color: aquamarine;
+border-radius: 5px;
+box-shadow: 5px gray;
+margin: 5px;
+padding: 5px;
+
 
 }
+
+#about {
+    margin: 20px 20px 5px 20px;
+}
+
+#mywork {
+    margin: 5px 20px 5px 20px;
+}
+
+footer, footer h2 {
+    text-align: center;
+    margin: 20px 20px 5px 20px;
+}
+
+
+
+
+
+#mywork {
+    display: flex;
+    margin-top: 20px;
+    flex-direction:column;
+    justify-content: center;
+    
+}
+
+#firstproject img{
+    height: 250px;
+    
+
+}
+#firstproject {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    
+
+}
+
+
+
 
 
 @media screen and (max-width: 1026px) {
@@ -118,6 +183,11 @@ body h2 {
     header img {
     margin-top: 10px;    
 
+    }
+
+    .navlinks{
+    flex-direction: column;
+    text-align: center;
     }
 }
    
